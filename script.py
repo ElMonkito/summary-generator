@@ -2,7 +2,8 @@ import fitz  # PyMuPDF pour manipuler les fichiers PDF
 import openai
 import os
 from tqdm import tqdm
-
+from dotenv import load_dotenv
+load_dotenv()
 # Récupération de la clé API depuis les variables d'environnement
 API_KEY = os.getenv("OPENAI_API_KEY")
 if API_KEY is None:
